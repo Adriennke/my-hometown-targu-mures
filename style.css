@@ -1,59 +1,83 @@
-* {
-    margin: 0.5rem;
-    padding: 0.5rem;
-}
+    * {
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
 
-body {
-    background-color: rgb(51, 137, 139);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
+    body {
+        /* background-color: rgb(51, 137, 139); */
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        height: 100%;
+    }
 
-header {
-    padding: 20px;
-    text-align: center;
-    background: #3584b3;
-    color: white;
-}
+    .hero-image {
+        opacity: 0.8;
+        width: 100%;
+        height: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
 
-nav a {
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
-}
+    .hero-text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgb(5, 4, 4);
+    }
 
-
-nav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-aside {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #f1f1f1;
-    padding: 20px;
-    color: rgb(41, 40, 40);
-
-}
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #f1f1f1;
-    padding: 20px;
-    color: rgb(41, 40, 40);
-
-}
+    nav a {
+        color: rgb(5, 4, 4);
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+    }
 
 
-ul {
+    nav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
 
-    list-style-type: none;
-}
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 
-footer {
-    padding: 10px;
-    text-align: center;
-    background: #f1f1f1;
-}
+    .side {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #f1f1f1;
+        padding: 20px;
+        color: rgb(66, 66, 66);
+
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #f1f1f1;
+        padding: 20px;
+        color: rgb(66, 66, 66);
+
+    }
+
+
+    ul {
+
+        list-style-type: none;
+    }
+
+    footer {
+        padding: 10px;
+        text-align: center;
+        background: #f1f1f1;
+    }
+
+    a {
+        color: rgb(66, 66, 66);
+        padding: 15px;
+        text-decoration: none;
+    }

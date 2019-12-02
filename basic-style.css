@@ -1,0 +1,48 @@
+:root {}
+
+html {
+    font-size: 100%;
+    font-family: 'Baskervville', serif;
+}
+
+/*making nice readable */
+body {
+    background-color: #FFFAFA;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: rgb(61, 61, 61);
+}
+
+img {
+    max-width: 100vw;
+    height: auto;
+}
+
+/* adding whitespace to the left and right of the main element  */
+main {
+    padding: 1rem 2rem 2rem;
+}
+
+footer {
+    padding: 0 2rem 0.4rem;
+    text-align: center;
+}
+
+nav a {
+    color: rgb(5, 4, 4);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+ul {
+
+    list-style-type: none;
+}
+
+/*section:nth child(2n) -it would do every second section*/
