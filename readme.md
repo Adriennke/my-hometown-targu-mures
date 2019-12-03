@@ -22,7 +22,7 @@
 
 # TODO
 
--new image
--some silver effect
--some more information
--connect links
+- clean divs
+- some more information
+- connect links
+- tidy whitespace
