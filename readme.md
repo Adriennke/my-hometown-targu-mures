@@ -19,3 +19,10 @@
 - Styled the layout
 - Start the global typography
 - Refine visual details
+
+# TODO
+
+-new image
+-some silver effect
+-some more information
+-connect links
