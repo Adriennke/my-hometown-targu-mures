@@ -12,12 +12,23 @@ body {
     background-color: #FFFAFA;
     font-size: 1.2rem;
     line-height: 1.2;
-    color: rgb(61, 61, 61);
+    color: rgb(87, 85, 85);
 }
 
 img {
-    max-width: 100vw;
+    max-width: 100%;
     height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+#silver {
+    color: RGB(116, 119, 124);
+}
+
+h1,
+h2 {
+    padding-bottom: 1.5rem
 }
 
 /* adding whitespace to the left and right of the main element  */
@@ -49,7 +60,16 @@ ul {
     bottom: 0;
     width: 300px;
     height: 50px;
-    transition: bottom 0.3s;
+    font-size: 18px;
+    transition-property: font-size;
+    transition-duration: 4s;
+    transition-delay: 2s;
+
+}
+
+ul:hover {
+    font-size: 18px;
+
 }
 
 li {
@@ -61,7 +81,7 @@ li a {
     justify-content: center;
     color: rgb(39, 38, 38);
     text-align: center;
-    padding: 8px 8px;
+    padding: 8px 10px;
     text-decoration: none;
     color: rgb(167, 114, 114);
 }
@@ -73,8 +93,8 @@ li a:hover:not(.active) {
     background-color: #111;
 }
 
-.active {
-    background-color: rgb(243, 179, 105);
+a:active {
+    background-color: #c4c7ce;
 }
 
 a {
