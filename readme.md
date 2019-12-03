@@ -22,7 +22,6 @@
 
 # TODO
 
-- clean divs
 - some more information
 - connect links
 - tidy whitespace

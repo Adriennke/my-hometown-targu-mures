@@ -33,6 +33,7 @@ h2 {
 
 p {
     max-width: 500px;
+    margin-bottom: 1em;
 }
 
 
@@ -60,7 +61,7 @@ ul {
     flex-flow: column wrap;
     list-style-type: none;
     margin: 0 auto;
-    padding: 0.5rem;
+    padding: 0.2rem;
     overflow: hidden;
     background-color: #FFFAFA;
     position: fixed;
