@@ -33,15 +33,11 @@ h2 {
 
 /* adding whitespace to the left and right of the main element  */
 main {
-    padding: 1rem 2rem 2rem;
+    padding: 3rem 2rem 2rem;
 }
 /* same padding for header excluding navigation and hero image */
 header>section {
     padding: 1rem 2rem 2rem;
-}
-
-.intro {
-    padding-top: 2rem;
 }
 
 .landmarks {
