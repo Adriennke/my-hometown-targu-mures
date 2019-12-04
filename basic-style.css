@@ -158,30 +158,39 @@ picture {
         MAIN
 **********************/
 main {
-    padding: 0;
-    padding-top: 3ren;
+    padding: 0 2.5vw 0;
+    /* padding-top: 3rem; */
 }
 /*hide top-button*/
 .top-button {
     display: none;
 }
 
-main>article {
+main article {
     display: flex;
     flex-wrap: wrap;
     
 }
-article>h2 {
+
+main article:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+h2, h3 {
     width: 100%;
 }
 article>section {
     flex-basis: 40vw;
-    
-    justify-content: space-between;
+
+    justify-content: space-between;/* NOT WORKING*/
 }
 
-article>section {
-    margin-right: 5vw;
+article>section:first-of-type {
+    /* margin-right: 5vw; */
 }
 
 }
+
+/*
+- menu verstecken wenn ganz oben?
+*/
