@@ -72,6 +72,8 @@ ul {
     transition-duration: 4s;
     transition-delay: 2s;
 
+    border-top: black 1px solid;
+
 }
 
 ul:hover {
@@ -119,16 +121,36 @@ a {
 /**************************************************
 Code from Simon
 **************************************************/
-
-
-
-
-
-
-@media (min-width: 768px) { 
-
-ul {
+nav {
     
 }
 
- }
+
+@media (min-width: 768px) { 
+/**********************
+        HEADER
+**********************/
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+/*Hides actual image and replace it with background img*/
+header>picture>img {
+   display: none;
+}
+picture {
+    height: 30vw;
+    background-image: url("img/hero2.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+
+}
