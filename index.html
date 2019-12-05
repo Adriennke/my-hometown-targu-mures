@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="basic-style.css">
-    <link rel="stylesheet" href="javascript.js">
+    <script src="javascript.js"></script>
     <title>A webpage about Targu Mures, my hometown.</title>
 </head>
 
@@ -123,18 +123,7 @@
 
 
     <script>
-        //Function to hide nav bar when on the very top
-    let prevScrollPos = window.pageYOffset;
 
-    window.onscroll = function() {
-        const currentScrollPos = window.pageYOffset;
-            if (prevScrollPos >= currentScrollPos) {
-            document.getElementById("main-nav").style.bottom = -100+"px";
-            } else {
-            document.getElementById("main-nav").style.bottom = 0;
-        }
-        prevScrollpos = currentScrollPos;
-    } 
     </script>
     </main>
 
