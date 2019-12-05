@@ -69,7 +69,7 @@ ul {
     transition-delay: 2s;
     transition: bottom 0.5s;
 
-    border-top: black 1px solid;
+    border-top: rgba(0, 0, 0, 0.156) 1px solid;
 
 }
 
@@ -119,8 +119,6 @@ a {
 Code from Simon
 **************************************************/
 
-
-
 @media (min-width: 768px) { 
 /**********************
         General
@@ -131,9 +129,7 @@ html {
 img { /*Even the height of images with text*/
     margin-top: 1em;
 }
-h3 {
-    padding-top: 1em;
-}
+
 /**********************
         HEADER
 **********************/
@@ -165,30 +161,37 @@ main {
     padding: 0 5vw 0;
     /* padding-top: 3rem; */
 }
-
-/*hide top-button*/
-.top-button {
-    display: none;
+h3 {
+    padding-top: 1em;
+}
+h2, h3 {
+    width: 100%;
 }
 
+#booking {
+    padding: 3em 0;
+}
+
+/*******
+Flex Structure
+*******/
 main article {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
 main article:nth-child(even) {
     flex-direction: row-reverse;
     justify-content: space-between;
-}
-
-h2, h3 {
-    width: 100%;
 }
 article>section {
     flex-basis: 40vw;
 }
 
+/*hide top-button*/
+.top-button {
+    display: none;
+}
 }
 
 /*
