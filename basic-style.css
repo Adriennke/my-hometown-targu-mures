@@ -67,6 +67,7 @@ ul {
     transition-property: font-size;
     transition-duration: 4s;
     transition-delay: 2s;
+    transition: bottom 0.5s;
 
     border-top: black 1px solid;
 
@@ -148,7 +149,7 @@ header>picture>img {
    display: none;
 }
 picture {
-    height: 30vw;
+    height: 35vw; /*Magic number but makes the page look like I want it*/
     background-image: url("img/hero2.jpg");
     background-size: cover;
     background-position: bottom;
@@ -158,9 +159,10 @@ picture {
         MAIN
 **********************/
 main {
-    padding: 0 2.5vw 0;
+    padding: 0 5vw 0;
     /* padding-top: 3rem; */
 }
+
 /*hide top-button*/
 .top-button {
     display: none;
@@ -169,11 +171,12 @@ main {
 main article {
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: space-between;
 }
 
 main article:nth-child(even) {
-  flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 }
 
 h2, h3 {
@@ -181,12 +184,6 @@ h2, h3 {
 }
 article>section {
     flex-basis: 40vw;
-
-    justify-content: space-between;/* NOT WORKING*/
-}
-
-article>section:first-of-type {
-    /* margin-right: 5vw; */
 }
 
 }

@@ -24,7 +24,7 @@
                 </p>
             </section>
             <nav>
-                <ul>
+                <ul id="main-nav">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#info">Info</a></li>
                     <li><a href="#stuff">Shop</a></li>
@@ -80,6 +80,7 @@
 
             <article><!--The Palffy House-->
                 <h3>The Palffy House</h3>
+                <section><!--placeholder for flex--></section>
                 <section>
                     <p>
                         The first elements of Baroque architecture appeared, in Targu Mures, in the second half of the 17th century. <em>The Pálffy House</em>, built around 1640, reflects an evolutionary stage that surpasses typical Renaissance architectural elements such as those of the oldest buildings of Targu Mures, the Köpeczi and Nagy Szabó houses. The edifice was built by judge Tolnai János and sold to the Pálffy family in 1885, hence the name by which the building is known today. The building was renovated in 2006 and today it hosts the newly established Music School of the University of Theatrical Arts of Targu Mures.
@@ -124,8 +125,23 @@
             <a href="https://www.google.com/flights?lite=0#flt=/m/0156q..2019-12-19*./m/0156q.2019-12-23;c:EUR;e:1;a:LH*LH;sd:1;t:h" target="blank">Book your flight now!</a>
 
         </footer>
+
+    <script>
+        //Function to hide nav bar when on the very top
+    let prevScrollPos = window.pageYOffset;
+
+    window.onscroll = function() {
+        const currentScrollPos = window.pageYOffset;
+            if (prevScrollPos >= currentScrollPos) {
+            document.getElementById("main-nav").style.bottom = -100+"px";
+            } else {
+            document.getElementById("main-nav").style.bottom = 0;
+        }
+        prevScrollpos = currentScrollPos;
+    } 
+    </script>
     </main>
-    
+
 </body>
 
 </html>
