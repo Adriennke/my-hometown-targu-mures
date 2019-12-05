@@ -33,11 +33,11 @@ h2 {
 
 /* adding whitespace to the left and right of the main element  */
 main {
-    padding: 1rem 2rem 2rem;
+    padding: 3rem 2rem 2rem;
 }
-
-.intro {
-    padding-top: 2rem;
+/* same padding for header excluding navigation and hero image */
+header>section {
+    padding: 1rem 2rem 2rem;
 }
 
 .landmarks {
@@ -53,17 +53,23 @@ footer {
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 0 0 0.5rem 0;
     overflow: hidden;
     background-color: #FFFAFA;
     position: fixed;
     bottom: 0;
-    width: 300px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-content: center;
     height: 50px;
     font-size: 18px;
     transition-property: font-size;
     transition-duration: 4s;
     transition-delay: 2s;
+    transition: bottom 0.5s;
+
+    border-top: rgba(0, 0, 0, 0.156) 1px solid;
 
 }
 
@@ -108,3 +114,89 @@ a {
 }
 
 /*section:nth child(2n) -it would do every second section*/
+
+/**************************************************
+Code from Simon
+**************************************************/
+
+@media (min-width: 768px) { 
+/**********************
+        General
+**********************/
+html {
+    line-height: 1.3;
+}
+img { /*Even the height of images with text*/
+    margin-top: 1em;
+}
+
+/**********************
+        HEADER
+**********************/
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+ul {
+    padding: 0.5rem 0 0 0;
+}
+
+/*Hides actual image and replace it with background img*/
+header>picture>img {
+   display: none;
+}
+picture {
+    height: 70vh; /*Magic number but makes the page look like I want it*/
+    background-image: url("img/hero2.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+/**********************
+        MAIN
+**********************/
+main {
+    padding: 0 5vw 0;
+    /* padding-top: 3rem; */
+}
+h3 {
+    padding-top: 1em;
+}
+h2, h3 {
+    width: 100%;
+}
+
+#booking {
+    padding: 3em 0;
+}
+
+/*******
+Flex Structure
+*******/
+main article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+main article:nth-child(even) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+article>section {
+    flex-basis: 40vw;
+}
+
+/*hide top-button*/
+.top-button {
+    display: none;
+}
+}
+
+/*
+- menu verstecken wenn ganz oben?
+*/

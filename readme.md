@@ -25,4 +25,9 @@
 -new image
 -some silver effect
 -some more information
--connect links
+-connect links (done by Simon)
+
+## Update desktop version
+- Flex structure
+- working navigation
+- hiding navigation bar when scrolled all the way up (also for mobile)
