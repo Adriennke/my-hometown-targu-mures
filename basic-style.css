@@ -10,7 +10,7 @@ html {
 body {
     background-color: #FFFAFA;
     font-size: 1.2rem;
-    line-height: 1.2;
+    line-height: 1.3;
     color: rgb(87, 85, 85);
     text-align: justify;
 }
@@ -26,15 +26,28 @@ img {
     color: RGB(116, 119, 124);
 }
 
+.centering {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 h1,
 h2 {
     padding-bottom: 1.5rem
 }
 
 p {
-    max-width: 500px;
+    max-width: 650px;
     margin-bottom: 1em;
 }
+
+#first-p {
+    max-width: 770px;
+    margin-bottom: 1em;
+}
+
 
 
 /* adding whitespace to the left and right of the main element  */
@@ -50,11 +63,15 @@ main {
     padding-top: 2rem;
 }
 
-footer {
+/* footer {
     padding: 0 2rem 0.4rem;
     padding-bottom: 4rem;
-    text-align: center;
-}
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+} */
 
 ul {
     display: flex;
@@ -77,9 +94,8 @@ li {
 
 li a {
     display: block;
-    /* align-items: center; */
+
     color: rgb(39, 38, 38);
-    /* text-align: center; */
     padding: 8px 10px;
     text-decoration: none;
     color: rgb(167, 114, 114);
@@ -98,7 +114,6 @@ a:active {
 
 a {
     display: block;
-    /* justify-content: center; */
     text-align: center;
     color: rgb(167, 114, 114);
     text-decoration-line: underline;
